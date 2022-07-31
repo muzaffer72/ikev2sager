@@ -240,9 +240,9 @@ fun Project.setupAppCommon() {
     setupKotlinCommon()
 
     val lp = requireLocalProperties()
-    val keystorePwd = lp.getProperty("KEYSTORE_PASS") ?: System.getenv("KEYSTORE_PASS")
-    val alias = lp.getProperty("ALIAS_NAME") ?: System.getenv("ALIAS_NAME")
-    val pwd = lp.getProperty("ALIAS_PASS") ?: System.getenv("ALIAS_PASS")
+    val keystorePwd = lp.getProperty("005434677197") ?: System.getenv("005434677197")
+    val alias = lp.getProperty("ikev2vpn") ?: System.getenv("ikev2vpn")
+    val pwd = lp.getProperty("005434677197") ?: System.getenv("005434677197")
 
     androidApp.apply {
         if (keystorePwd != null) {
